@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en"> 
   <head>
-    <title>Skyberry</title>
+    <title>Book Sphere</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,6 @@
         src="models/Boook1.glb"
         alt="3D модель"
         auto-rotate
-        camera-controls
         shadow-intensity="1">
           </model-viewer>
           <div class="cssload-speeding-wheel"></div>
@@ -101,6 +100,7 @@
         src="models/model.glb"
         alt="3D модель"
         auto-rotate
+        camera-controls
         shadow-intensity="1">
           </model-viewer>
                 </div>
@@ -120,34 +120,9 @@
       src="models/1984.glb"
       alt="3D модель"
       camera-controls
+      auto-rotate
       shadow-intensity="1">
     </model-viewer>
-    <script>
-    const modelViewer = document.getElementById('model');
-
-    let rotation = 0; // Начальная позиция вращения
-    let direction = 1; // Направление вращения (1 = вперед, -1 = назад)
-    const step = 0.02; // Шаг вращения (чем больше, тем быстрее)
-
-    function animateRotation() {
-      // Увеличиваем или уменьшаем угол вращения
-      rotation += step * direction;
-
-      // Если вращение достигает 180 градусов (половина оборота), меняем направление
-      if (rotation >= Math.PI || rotation <= 0) {
-        direction *= -1; // Меняем направление вращения
-      }
-
-      // Применяем значение вращения к модели
-      modelViewer.setAttribute('rotation', `0 ${rotation} 0`);
-
-      // Продолжаем анимацию
-      requestAnimationFrame(animateRotation);
-    }
-
-    // Запуск анимации
-    animateRotation();
-  </script>
 
     <div class="card-body">
       <h5 class="card-title placeholder-glow" style="color: #28a745">
@@ -168,6 +143,7 @@
       src="models/mobi_dic.glb"
       alt="3D модель"
       auto-rotate
+      camera-controls
       rotation-per-second="2"
       shadow-intensity="1">
     </model-viewer>
@@ -190,35 +166,11 @@
       src="models/model.glb"
       alt="3D модель"
       auto-rotate
+      camera-controls
       rotation-per-second="2"
       shadow-intensity="1">
     </model-viewer>
-    <script>
-    const modelViewer = document.getElementById('model');
 
-    let rotation = 0; // Начальная позиция вращения
-    let direction = 1; // Направление вращения (1 = вперед, -1 = назад)
-    const step = 0.02; // Шаг вращения (чем больше, тем быстрее)
-
-    function animateRotation() {
-      // Увеличиваем или уменьшаем угол вращения
-      rotation += step * direction;
-
-      // Если вращение достигает 180 градусов (половина оборота), меняем направление
-      if (rotation >= Math.PI || rotation <= 0) {
-        direction *= -1; // Меняем направление вращения
-      }
-
-      // Применяем значение вращения к модели
-      modelViewer.setAttribute('rotation', `0 ${rotation} 0`);
-
-      // Продолжаем анимацию
-      requestAnimationFrame(animateRotation);
-    }
-
-    // Запуск анимации
-    animateRotation();
-  </script>
     <div class="card-body">
       <h5 class="card-title placeholder-glow">
         <span class="placeholder col-6"></span>
@@ -238,6 +190,7 @@
       src="models/model.glb"
       alt="3D модель"
       auto-rotate
+      camera-controls
       rotation-per-second="2"
       shadow-intensity="1">
     </model-viewer>
@@ -263,6 +216,7 @@
       alt="3D модель"
       auto-rotate
       rotation-per-second="2"
+      camera-controls
       shadow-intensity="1">
     </model-viewer>
     <div class="card-body">
@@ -285,6 +239,7 @@
       alt="3D модель"
       auto-rotate
       rotation-per-second="2"
+      camera-controls
       shadow-intensity="1">
     </model-viewer>
     <div class="card-body">
@@ -307,6 +262,7 @@
       alt="3D модель"
       auto-rotate
       rotation-per-second="2"
+      camera-controls
       shadow-intensity="1">
     </model-viewer>
     <div class="card-body">
@@ -329,6 +285,7 @@
       alt="3D модель"
       auto-rotate
       rotation-per-second="2"
+      camera-controls
       shadow-intensity="1">
     </model-viewer>
     <div class="card-body">
